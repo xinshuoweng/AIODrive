@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+tmp/*
+carla_examples/*
+deprecated/*
