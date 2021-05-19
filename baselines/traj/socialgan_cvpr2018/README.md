@@ -21,17 +21,6 @@ Below we show an examples of socially acceptable predictions made by our model i
 <img src="images/3.gif"></img>
 </div>
 
-If you find this code useful in your research then please cite
-```
-@inproceedings{gupta2018social,
-  title={Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks},
-  author={Gupta, Agrim and Johnson, Justin and Fei-Fei, Li and Savarese, Silvio and Alahi, Alexandre},
-  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  number={CONF},
-  year={2018}
-}
-```
-
 ## Model
 Our model consists of three key components: Generator (G), Pooling Module (PM) and Discriminator (D). G is based on encoder-decoder framework where we link the hidden states of encoder and decoder via PM. G takes as input trajectories of all people involved in a scene and outputs corresponding predicted trajectories. D inputs the entire sequence comprising both input trajectory and future prediction and classifies them as “real/fake”.
 
