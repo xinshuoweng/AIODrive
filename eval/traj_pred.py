@@ -41,7 +41,7 @@ def check_eval_windows(start_pred, pred_len, split='test'):
 
 def compute_metrics(gt_json, pred_json, split='test', total_sample=20):
     results_dir = fileparts(pred_json)[0]
-    log_file = os.path.join(results_dir, 'eval_log.txt'); log_file = open(log_file, 'w')
+    log_file = os.path.join(results_dir, 'eval_traj_log.txt'); log_file = open(log_file, 'w')
     
     # data loading
     print_log('loading GT from %s' % gt_json, log_file)
