@@ -30,4 +30,6 @@ Then, you can run the following code for evaluation. Numbers will be printed out
 $ python3 traj_pred.py
 ```
 
+If you have any question about how to prepare the data (result and ground truth file), you can find instructions <a href="http://www.aiodrive.org/forecasting.html">here</a>
+
 
