@@ -282,14 +282,12 @@ def compute_metrics(gt_json, pred_json, split='test', total_sample=20):
     for key, value in metric_all.items():        
         if '20' in key:      # only add length of 20 to output metric for EvalAI leaderboard
             output[key] = value
-    output['Total'] = output['ADE_20']      # add main metric
     pprint.pprint(output)                   # print output metrics
 
     return output
 
 if __name__ == '__main__':
-    test_annotation_file = '/home/xinshuo/workspace/code/socialgan_cvpr2018/datasets/aiodrive_val.json'
-    # user_submission_file = '/mnt/nas/xinshuo/models/socialgan_cvpr2018/train_20210515_12h42m09s/results_20210516_12h41m56s/results.json'
-    user_submission_file = '/mnt/nas/xinshuo/models/socialgan_cvpr2018/results_all_20210516_15h22m34s.json'
+    test_annotation_file = '../data/traj_val_anno.json'
+    user_submission_file = '../data/traj_val.json'
     split = 'val'
     compute_metrics(test_annotation_file, user_submission_file, split)
