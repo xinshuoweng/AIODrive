@@ -1,4 +1,4 @@
-Please put all the annotations we provide and result files you generate here for evaluation. Below instructions are categorized by each challenge.
+Please put all annotations and result files here for evaluation purposes. Below instructions are categorized by each challenge.
 
 ## Trajectory Forecasting
 
