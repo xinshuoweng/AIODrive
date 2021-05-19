@@ -6,10 +6,12 @@ This repository contains the official implementation for our manuscript "[All-In
 
 ```
 @article{Weng2020_AIODrive,
-author = {Weng, Xinshuo and Man, Yunze and Cheng, Dazhi and Park, Jinhyung and O'Toole, Matthew and Kitani, Kris},
+author = {Weng, Xinshuo and Man, Yunze and Cheng, Dazhi and Park, Jinhyung and O'Toole, 
+Matthew and Kitani, Kris},
 journal = {arXiv},
-title = {{All-In-One Drive: A Large-Scale Comprehensive Perception Dataset with High-Density Long-Range Point Clouds}},
+title = {{All-In-One Drive: A Large-Scale Comprehensive Perception Dataset with 
+High-Density Long-Range Point Clouds}},
 year = {2020}
 }
 ```
-<img align="center" src="https://github.com/xinshuoweng/AIODrive/blob/master/demo.gif">
+<img align="center" width="98%" src="https://github.com/xinshuoweng/AIODrive/blob/master/demo.gif">
