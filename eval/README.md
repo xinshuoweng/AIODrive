@@ -1,8 +1,8 @@
 # Evaluation 
 
-Each challenge has its own evaluation procedures. Please follow instructions for each challenge below. 
+Each challenge has its own evaluation procedure. Please follow instructions for each challenge below. 
 
-All below code depends on my personal toolbox: https://github.com/xinshuoweng/Xinshuo_PyToolbox. Please install the toolbox by
+All evaluation code depends on my personal toolbox: https://github.com/xinshuoweng/Xinshuo_PyToolbox. Please install the toolbox by
 
 *1. Clone the github repository.*
 ~~~shell
