@@ -12,4 +12,4 @@ title = {{All-In-One Drive: A Large-Scale Comprehensive Perception Dataset with 
 year = {2020}
 }
 ```
-<img align="center" src="https://github.com/xinshuoweng/AIODrive/blob/master/demo.mp4">
+<img align="center" src="https://github.com/xinshuoweng/AIODrive/blob/master/demo.gif">
