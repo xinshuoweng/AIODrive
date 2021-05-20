@@ -223,6 +223,7 @@ def compute_metrics(gt_json, pred_json, split='test', total_sample=20):
                 print('\n\nMissing IDs: %d, total IDs: %d, miss rate: %.3f for len of %d, %s\n' % \
                     (num_miss, num_total_obj_valid, missrate, pred_len, obj_class))
 
+    ################ logging 
     print_log('', log_file)
     metric_all = dict()
     for pred_len in [10, 20, 50]:
