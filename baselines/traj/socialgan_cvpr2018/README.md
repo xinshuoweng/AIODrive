@@ -38,18 +38,15 @@ deactivate  # Exit virtual environment
 
 ## Model Training
 
-You can use the script `scripts/run_traj.sh` to start training for different object categories with different input/output frames. For example, if you want to train Car trajectory forecasting model in 1-second, 2-second, and 5-second prediction settings, you should run the following commands respectively:
+You can use the script `scripts/run_traj.sh` to start training for different object categories with different input/output frames. For example, if you want to train Car trajectory forecasting model in 2-second prediction setting, you should modify dataset_name to 'aiodrive_Car' and skip to 2 in `scripts/run_traj.sh`, and then run the following command:
 ```
-$ ./scripts/run_traj.sh --dataset_name aiodrive_Car --skip 1
-$ ./scripts/run_traj.sh --dataset_name aiodrive_Car --skip 2
-$ ./scripts/run_traj.sh --dataset_name aiodrive_Car --skip 5
+$ ./scripts/run_traj.sh
 ```
+Simiarly, if you want to train Pedestrian trajectory forecasting model in 5-second prediction setting, you should modify dataset_name to 'aiodrive_Ped' and skip to 5 in `scripts/run_traj.sh`, and then run the same command above.
 
 ## Models Inference
-You can use the script `scripts/evaluate_model.py` to easily run any of the pretrained models on any of the datsets. For example you can replicate the Table 1 results for all datasets for SGAN-20V-20 like this:
-
-```bash
-python scripts/evaluate_model.py \
-  --model_path models/sgan-models
+You can use the script `scripts/evaluate_model.py` to easily run any of the trained models. If you model is saved to `path_to_your_model`, you can then run the following command:
+```
+python3 scripts/evaluate_model.py --model_path path_to_your_model
 ```
 
