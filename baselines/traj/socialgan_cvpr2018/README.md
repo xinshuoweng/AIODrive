@@ -37,13 +37,21 @@ deactivate  # Exit virtual environment
 ```
 
 ## Model Training
-Instructions for training new models can be [found here](TRAINING.md).
 
-## Models Inference
-You can use the script `scripts/evaluate_model.py` to easily run any of the pretrained models on any of the datsets. For example you can replicate the Table 1 results for all datasets for SGAN-20V-20 like this:
+You can use the script `scripts/run_traj.sh` to start training for different object categories with different input/output frames. For example, if you want to train Car trajectory forecasting model in 2-second prediction setting, you should modify dataset_name to 'aiodrive_Car' and skip to 2 in `scripts/run_traj.sh`, and then run the following command:
+```
+$ ./scripts/run_traj.sh
+```
+Simiarly, if you want to train Pedestrian trajectory forecasting model in 5-second prediction setting, you should modify dataset_name to 'aiodrive_Ped' and skip to 5 in `scripts/run_traj.sh`, and then run the same command above.
 
-```bash
-python scripts/evaluate_model.py \
-  --model_path models/sgan-models
+## Model Inference
+You can use the script `scripts/evaluate_model.py` to easily run any of the trained models. If you model is saved to `path_to_your_model`, you can then run the following command:
+```
+python3 scripts/evaluate_model.py --model_path path_to_your_model
 ```
 
+## AIODrive Evaluation
+Once you have used your trained models to make predictions on all four object categories in 2-second prediction setting (and/or 1-second, 5-second settings), you can use the following script to merge results and submit to <a href="http://www.aiodrive.org/forecasting.html">AIODrive Trajectory Forecasting Challenge</a>.
+```
+python3 scripts/merge_AIODrive_results.py
+```
