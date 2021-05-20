@@ -2,7 +2,7 @@
 
 Each challenge has its own evaluation procedure. Please follow instructions for each challenge below. 
 
-All evaluation code depends on my personal toolbox: https://github.com/xinshuoweng/Xinshuo_PyToolbox. Please install the toolbox by
+All evaluation code depends on my personal toolbox: https://github.com/xinshuoweng/Xinshuo_PyToolbox. Please install the toolbox:
 
 *1. Clone the github repository.*
 ~~~shell
