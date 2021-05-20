@@ -37,7 +37,13 @@ deactivate  # Exit virtual environment
 ```
 
 ## Model Training
-Instructions for training new models can be [found here](TRAINING.md).
+
+You can use the script `scripts/run_traj.sh` to start training for different object categories with different input/output frames. For example, if you want to train Car trajectory forecasting model in 1-second, 2-second, and 5-second prediction settings, you should run the following commands respectively:
+```
+$ ./scripts/run_traj.sh --dataset_name aiodrive_Car --skip 1
+$ ./scripts/run_traj.sh --dataset_name aiodrive_Car --skip 2
+$ ./scripts/run_traj.sh --dataset_name aiodrive_Car --skip 5
+```
 
 ## Models Inference
 You can use the script `scripts/evaluate_model.py` to easily run any of the pretrained models on any of the datsets. For example you can replicate the Table 1 results for all datasets for SGAN-20V-20 like this:
