@@ -1,4 +1,4 @@
-# Social GAN (CVPR 2018)
+# Social GAN (CVPR 2018) -- AIODrive Trajectory Forecasting Baseline
 
 **<a href="https://arxiv.org/abs/1803.10892">Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks</a>**
 <br>
