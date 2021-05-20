@@ -1,6 +1,4 @@
-# Social GAN
-
-This is the code for the paper
+# Social GAN (CVPR 2018)
 
 **<a href="https://arxiv.org/abs/1803.10892">Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks</a>**
 <br>
@@ -10,12 +8,8 @@ This is the code for the paper
 <a href="http://cvgl.stanford.edu/silvio/">Silvio Savarese</a>,
 <a href="http://web.stanford.edu/~alahi/">Alexandre Alahi</a>
 <br>
-Presented at [CVPR 2018](http://cvpr2018.thecvf.com/)
 
-Human motion is interpersonal, multimodal and follows social conventions. In this paper, we tackle this problem by combining tools from sequence prediction and generative adversarial networks: a recurrent sequence-to-sequence model observes motion histories and predicts future behavior, using a novel pooling mechanism to aggregate information across
-people.
-
-Below we show an examples of socially acceptable predictions made by our model in complex scenarios. Each person is denoted by a different color. We denote observed trajectory by dots and predicted trajectory by stars.
+Human motion is interpersonal, multimodal and follows social conventions. In this paper, we tackle this problem by combining tools from sequence prediction and generative adversarial networks: a recurrent sequence-to-sequence model observes motion histories and predicts future behavior, using a novel pooling mechanism to aggregate information across people. Below we show an examples of socially acceptable predictions made by our model in complex scenarios. Each person is denoted by a different color. We denote observed trajectory by dots and predicted trajectory by stars.
 <div align='center'>
 <img src="images/2.gif"></img>
 <img src="images/3.gif"></img>
