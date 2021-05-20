@@ -42,15 +42,10 @@ echo $PWD > env/lib/python3.5/site-packages/sgan.pth  # Add current directory to
 deactivate  # Exit virtual environment
 ```
 
-## Pretrained Models
-You can download pretrained models by running the script `bash scripts/download_models.sh`. This will download the following models:
+## Model Training
+Instructions for training new models can be [found here](TRAINING.md).
 
-- `sgan-models/<dataset_name>_<pred_len>.pt`: Contains 10 pretrained models for all five datasets. These models correspond to SGAN-20V-20 in Table 1.
-- `sgan-p-models/<dataset_name>_<pred_len>.pt`: Contains 10 pretrained models for all five datasets. These models correspond to SGAN-20VP-20 in Table 1.
-
-Please refer to [Model Zoo](MODEL_ZOO.md) for results.
-
-## Running Models
+## Models Inference
 You can use the script `scripts/evaluate_model.py` to easily run any of the pretrained models on any of the datsets. For example you can replicate the Table 1 results for all datasets for SGAN-20V-20 like this:
 
 ```bash
@@ -58,5 +53,3 @@ python scripts/evaluate_model.py \
   --model_path models/sgan-models
 ```
 
-## Training new models
-Instructions for training new models can be [found here](TRAINING.md).
