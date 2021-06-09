@@ -1,10 +1,10 @@
 python3 scripts/train.py \
-  --dataset_name 'aiodrive_Cyc' \
+  --dataset_name 'aiodrive_Car' \
   --delim tab \
   --d_type 'local' \
   --pred_len 10 \
   --obs_len 10 \
-  --skip 5 \
+  --skip 2 \
   --encoder_h_dim_g 32 \
   --encoder_h_dim_d 64\
   --decoder_h_dim 32 \
