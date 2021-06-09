@@ -36,6 +36,20 @@ echo $PWD > env/lib/python3.5/site-packages/sgan.pth  # Add current directory to
 deactivate  # Exit virtual environment
 ```
 
+## Dependencies:
+This code depends on my personal toolbox: https://github.com/xinshuoweng/Xinshuo_PyToolbox. Please install the toolbox by
+
+*1. Clone the github repository.*
+~~~shell
+git clone https://github.com/xinshuoweng/Xinshuo_PyToolbox
+~~~
+
+*2. Install dependency for the toolbox.*
+~~~shell
+cd Xinshuo_PyToolbox
+pip install -r requirements.txt
+~~~
+
 ## Model Training
 
 You can use the script `scripts/run_traj.sh` to start training for different object categories with different input/output frames. For example, if you want to train Car trajectory forecasting model in 2-second prediction setting, you should modify dataset_name to 'aiodrive_Car' and skip to 2 in `scripts/run_traj.sh`, and then run the following command:
