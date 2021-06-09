@@ -30,8 +30,7 @@ You can setup a virtual environment to run the code like this:
 ```bash
 python3 -m venv env               # Create a virtual environment
 source env/bin/activate           # Activate virtual environment
-pip install -r requirements.txt   # Install dependencies
-echo $PWD > env/lib/python3.5/site-packages/sgan.pth  # Add current directory to python path
+pip3 install -r requirements.txt   # Install dependencies
 # Work for a while ...
 deactivate  # Exit virtual environment
 ```
@@ -47,7 +46,7 @@ git clone https://github.com/xinshuoweng/Xinshuo_PyToolbox
 *2. Install dependency for the toolbox.*
 ~~~shell
 cd Xinshuo_PyToolbox
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ~~~
 
 ## Model Training
@@ -56,7 +55,7 @@ You can use the script `scripts/run_traj.sh` to start training for different obj
 ```
 $ ./scripts/run_traj.sh
 ```
-Simiarly, if you want to train Pedestrian trajectory forecasting model in 5-second prediction setting, you should modify dataset_name to 'aiodrive_Ped' and skip to 5 in `scripts/run_traj.sh`, and then run the same command above.
+Note that please run the above command in the root directory instead of within in the "script" folder. Simiarly, if you want to train Pedestrian trajectory forecasting model in 5-second prediction setting, you should modify dataset_name to 'aiodrive_Ped' and skip to 5 in `scripts/run_traj.sh`, and then run the same command above.
 
 ## Model Inference
 You can use the script `scripts/evaluate_model.py` to easily run any of the trained models. If you model is saved to `path_to_your_model`, you can then run the following command:
