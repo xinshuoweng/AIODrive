@@ -23,7 +23,7 @@ Our model consists of three key components: Generator (G), Pooling Module (PM) a
 </div>
 
 ## Setup
-All code was developed and tested on Ubuntu 16.04 with Python 3.5 and PyTorch 0.4.
+All code was developed and tested on Ubuntu 18 with Python 3.6 and PyTorch 1.3.1.
 
 You can setup a virtual environment to run the code like this:
 
